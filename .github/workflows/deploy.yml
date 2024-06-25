@@ -37,3 +37,6 @@ jobs:
           script: |
             whoami
             
+      - name: Display whoami output
+        run: |
+             echo "SSH Output: ${{ steps.ssh-command.outputs.stdout }}"
